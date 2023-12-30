@@ -143,8 +143,11 @@ const logout = () => {
                     <div :class="{ 'block': showingNavigationDropdown, 'hidden': !showingNavigationDropdown }"
                         class="sm:hidden">
                         <div class="pt-2 pb-3 space-y-1">
-                            <ResponsiveNavLink :href="route('dashboard')" :active="route().current('dashboard')">
-                                Dashboard
+                            <ResponsiveNavLink :href="route('welcome')" :active="route().current('welcome')">
+                                Home
+                            </ResponsiveNavLink>
+                            <ResponsiveNavLink :href="route('contact')" :active="route().current('contact')">
+                                Contact Us
                             </ResponsiveNavLink>
                         </div>
 
@@ -257,13 +260,13 @@ const logout = () => {
                 <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
                     <nav class="flex flex-col justify-between space-y-4 md:space-y-0 text-sm">
                         <div class="flex flex-col">
-                                    <NavLink :href="route('welcome')" class="text-sm" :active="route().current('welcome')">
-                                        Home
-                                    </NavLink>
-                                    <NavLink :href="route('contact')" :active="route().current('contact')">
-                                        Contact Us
-                                    </NavLink>
-                                </div>
+                            <NavLink :href="route('welcome')" class="text-sm" :active="route().current('welcome')">
+                                Home
+                            </NavLink>
+                            <NavLink :href="route('contact')" :active="route().current('contact')">
+                                Contact Us
+                            </NavLink>
+                        </div>
                         <div>
                             <p class="text-gray-500 mx-auto text-center">&copy; {{ new Date().getFullYear() }}
                                 Tyneside Community Store. All rights
