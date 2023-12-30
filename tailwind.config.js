@@ -17,6 +17,9 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
+            backgroundImage: {
+                'welcome-hero': "url('/images/welcome-hero.jpg')",
+            }
         },
     },
 
