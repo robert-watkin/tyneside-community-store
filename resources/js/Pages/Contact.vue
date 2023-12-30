@@ -1,10 +1,12 @@
 <script setup>
 import AppLayout from '@/Layouts/AppLayout.vue';
-import Welcome from '@/Components/Welcome.vue';
+
 </script>
 
+<!-- Home page of website -->
 <template>
-    <AppLayout title="Dashboard">
+    <AppLayout title="Contact Us">
         <!-- Dashboard TODO Convert to admin page in version 2 -->
     </AppLayout>
 </template>
+
