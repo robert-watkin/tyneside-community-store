@@ -17,3 +17,9 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+// Inertia handles most routing for us, however, it does not handle in page requests such as the contact form submission without a redirect
+// for this we need to create custom api routes for these in page requests. See below : 
+
+Route::post('/contact', [App\Http\Controllers\ContactController::class, 'contactFormSubmitted'])->name('contact.submit');
