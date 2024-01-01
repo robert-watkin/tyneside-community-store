@@ -1,48 +1,69 @@
 <script setup>
 import AppLayout from '@/Layouts/AppLayout.vue';
+import { Link } from '@inertiajs/vue3';
 
 </script>
 
 <!-- Home page of website -->
 <template>
     <AppLayout title="Welcome">
-        <!-- full page hero with title inside -->
+        <!-- Full-page hero with title inside -->
         <div class="bg-welcome-hero bg-center bg-cover">
-            <div class="container mx-auto pb-36 pt-6  md:py-12 md:pb-24">
+            <div class="container mx-auto pb-36 pt-6 md:py-12 md:pb-24">
                 <div class="p-4 md:p-16 mb-8 md:mb-0 text-center">
                     <h1 class="text-4xl text-black font-semibold mb-4">Tyneside Community Store</h1>
-                    <p class="text-gray-800">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
-                    </p>
                 </div>
-
             </div>
         </div>
 
-        <!-- About Us Section. Text on left, placeholder image on right. inside container -->
-        <div class="container mx-auto pt-12">
-            <section class="mb-8">
-                <div class="flex flex-col md:flex-row justify between ">
-                    <div class="md:pl-16 p-4 md:w-1/2 md:text-right">
-                        <h3 class="text-xl font-semibold mb-4">About Us</h3>
+        <!-- Our mission -->
+        <div class="container mx-auto max-w-3xl p-4 mb-8">
+            <section>
+                <div class="text-center">
+                    <div class="">
+                        <h3 class="text-xl font-semibold mb-4">Our Mission</h3>
                         <p class="text-gray-700">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.
-                            Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis
-                            sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.
-                            Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per
-                            conubia nostra, per inceptos himenaeos. Curabitur sodales ligula in libero.
+                            Tyneside Community Store C.I.C. is a not-for-profit organisation that aims to provide affordable
+                            food and household items to the local community. We are a community store, run by the community,
+                            for
+                            the community.
                         </p>
-                    </div>
-                    <div class="p-4 md:w-1/2">
-                        <img class="h-48 w-full object-cover object-top md:h-auto md:mx-0 md:w-2/3" src="images/store-front.jpg" alt="Store Front Image" />
                     </div>
                 </div>
             </section>
         </div>
-        <!-- Find Us Section. Google Maps on left, address on right. inside container -->
 
+        <!-- About Us Section. Text on left, placeholder image on right. Inside container -->
+        <div class="container mx-auto pt-12">
+            <section class="mb-8">
+                <div class="flex flex-col md:flex-row justify-between ">
+                    <div class="md:pl-16 p-4 md:w-1/2 md:text-right">
+                        <h3 class="text-xl font-semibold mb-4">About Us</h3>
+                        <p class="text-gray-700">
+                            Established in December 2023 by Co-Founders who shared a commitment to supporting families
+                            in and around
+                            Tyneside, Tyneside Community Store C.I.C. has rapidly expanded with the help of dedicated
+                            Directors,
+                            volunteers, and a supportive community.
+                        </p>
+                        <!-- Read more button navigate to about -->
+                        <div class="mt-4">
+                            <Link :href="route('about')" class="bg-blue-500 text-white px-4 py-2 rounded-md">Read
+                            More</Link>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/2">
+                        <img class="h-48 w-full object-cover object-top md:h-auto md:mx-0 md:w-2/3"
+                            src="images/store-front.jpg" alt="Store Front Image" />
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+        <!-- Find Us Section. Google Maps on left, address on right. Inside container -->
         <div class="container mx-auto p-4 mb-8">
-            <!-- Find Usp -->
+            <!-- Find Us -->
             <section>
                 <div class="text-center">
                     <div class="">
@@ -65,14 +86,9 @@ import AppLayout from '@/Layouts/AppLayout.vue';
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
-
                 </div>
             </section>
-
-            <!-- More Sections as Needed -->
-
         </div>
-
     </AppLayout>
 </template>
 

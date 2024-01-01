@@ -53,6 +53,9 @@ const logout = () => {
                                     <NavLink :href="route('welcome')" :active="route().current('welcome')">
                                         Home
                                     </NavLink>
+                                    <NavLink :href="route('about')" :active="route().current('about')">
+                                        About Us
+                                    </NavLink>
                                     <NavLink :href="route('contact')" :active="route().current('contact')">
                                         Contact Us
                                     </NavLink>
@@ -145,6 +148,9 @@ const logout = () => {
                         <div class="pt-2 pb-3 space-y-1">
                             <ResponsiveNavLink :href="route('welcome')" :active="route().current('welcome')">
                                 Home
+                            </ResponsiveNavLink>
+                            <ResponsiveNavLink :href="route('about')" :active="route().current('about')">
+                                About Us
                             </ResponsiveNavLink>
                             <ResponsiveNavLink :href="route('contact')" :active="route().current('contact')">
                                 Contact Us
@@ -262,6 +268,9 @@ const logout = () => {
                         <div class="flex flex-col">
                             <NavLink :href="route('welcome')" class="text-sm" :active="route().current('welcome')">
                                 Home
+                            </NavLink>
+                            <NavLink :href="route('about')" :active="route().current('about')">
+                                About Us
                             </NavLink>
                             <NavLink :href="route('contact')" :active="route().current('contact')">
                                 Contact Us
