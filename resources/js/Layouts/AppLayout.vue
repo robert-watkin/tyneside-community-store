@@ -39,12 +39,12 @@ const logout = () => {
                 <nav class="bg-white border-b border-gray-100">
                     <!-- Primary Navigation Menu -->
                     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <div class="flex justify-between h-16">
+                        <div class="flex justify-between h-20">
                             <div class="flex">
                                 <!-- Logo -->
                                 <div class="shrink-0 flex items-center">
                                     <Link :href="route('dashboard')">
-                                    <ApplicationMark class="block h-9 w-auto" />
+                                    <ApplicationMark class="block h-16 w-auto" />
                                     </Link>
                                 </div>
 
@@ -61,9 +61,9 @@ const logout = () => {
                                     </NavLink>
                                 </div>
                             </div>
-
+<!-- 
                             <div class="hidden sm:flex sm:items-center sm:ms-6" v-if="$page.props.auth.user">
-                                <!-- Settings Dropdown -->
+                                Settings Dropdown
                                 <div class="ms-3 relative">
                                     <Dropdown align="right" width="48">
                                         <template #trigger>
@@ -90,7 +90,7 @@ const logout = () => {
                                         </template>
 
                                         <template #content>
-                                            <!-- Account Management -->
+                                            Account Management
                                             <div class="block px-4 py-2 text-xs text-gray-400">
                                                 Manage Account
                                             </div>
@@ -99,14 +99,9 @@ const logout = () => {
                                                 Profile
                                             </DropdownLink>
 
-                                            <DropdownLink v-if="$page.props.jetstream.hasApiFeatures"
-                                                :href="route('api-tokens.index')">
-                                                API Tokens
-                                            </DropdownLink>
-
                                             <div class="border-t border-gray-200" />
 
-                                            <!-- Authentication -->
+                                            Authentication
                                             <form @submit.prevent="logout">
                                                 <DropdownLink as="button">
                                                     Log Out
@@ -120,7 +115,7 @@ const logout = () => {
                                 <NavLink :href="route('login')" :active="route().current('login')">
                                     Admin Login
                                 </NavLink>
-                            </div>
+                            </div> -->
 
                             <!-- Hamburger -->
                             <div class="-me-2 flex items-center sm:hidden">
@@ -157,7 +152,8 @@ const logout = () => {
                             </ResponsiveNavLink>
                         </div>
 
-                        <!-- Responsive Settings Options -->
+                        
+                        <!-- Responsive Settings Options
                         <div v-if="$page.props.auth.user" class="pt-4 pb-1 border-t border-gray-200">
                             <div class="flex items-center px-4">
                                 <div v-if="$page.props.jetstream.managesProfilePhotos" class="shrink-0 me-3">
@@ -180,71 +176,21 @@ const logout = () => {
                                     Profile
                                 </ResponsiveNavLink>
 
-                                <ResponsiveNavLink v-if="$page.props.jetstream.hasApiFeatures"
-                                    :href="route('api-tokens.index')" :active="route().current('api-tokens.index')">
-                                    API Tokens
-                                </ResponsiveNavLink>
-
-                                <!-- Authentication -->
+                                Authentication
                                 <form method="POST" @submit.prevent="logout">
                                     <ResponsiveNavLink as="button">
                                         Log Out
                                     </ResponsiveNavLink>
                                 </form>
-
-                                <!-- Team Management -->
-                                <template v-if="$page.props.jetstream.hasTeamFeatures">
-                                    <div class="border-t border-gray-200" />
-
-                                    <div class="block px-4 py-2 text-xs text-gray-400">
-                                        Manage Team
-                                    </div>
-
-                                    <!-- Team Settings -->
-                                    <ResponsiveNavLink :href="route('teams.show', $page.props.auth.user.current_team)"
-                                        :active="route().current('teams.show')">
-                                        Team Settings
-                                    </ResponsiveNavLink>
-
-                                    <ResponsiveNavLink v-if="$page.props.jetstream.canCreateTeams"
-                                        :href="route('teams.create')" :active="route().current('teams.create')">
-                                        Create New Team
-                                    </ResponsiveNavLink>
-
-                                    <!-- Team Switcher -->
-                                    <template v-if="$page.props.auth.user.all_teams.length > 1">
-                                        <div class="border-t border-gray-200" />
-
-                                        <div class="block px-4 py-2 text-xs text-gray-400">
-                                            Switch Teams
-                                        </div>
-
-                                        <template v-for="team in $page.props.auth.user.all_teams" :key="team.id">
-                                            <form @submit.prevent="switchToTeam(team)">
-                                                <ResponsiveNavLink as="button">
-                                                    <div class="flex items-center">
-                                                        <svg v-if="team.id == $page.props.auth.user.current_team_id"
-                                                            class="me-2 h-5 w-5 text-green-400"
-                                                            xmlns="http://www.w3.org/2000/svg" fill="none"
-                                                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                                            <path stroke-linecap="round" stroke-linejoin="round"
-                                                                d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                                        </svg>
-                                                        <div>{{ team.name }}</div>
-                                                    </div>
-                                                </ResponsiveNavLink>
-                                            </form>
-                                        </template>
-                                    </template>
-                                </template>
                             </div>
                         </div>
-                        <!-- admin login -->
+                        admin login
                         <div v-else class="pt-4 pb-4 pl-3 border-t border-gray-200">
                             <NavLink :href="route('login')" :active="route().current('login')">
                                 Admin Login
                             </NavLink>
                         </div>
+                    -->
                     </div>
                 </nav>
 

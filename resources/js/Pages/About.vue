@@ -7,34 +7,11 @@ import AppLayout from '@/Layouts/AppLayout.vue';
 <!-- Home page of website -->
 <template>
     <AppLayout title="About Us">
-        <!-- Our mission -->
-        <div class="container max-w-4xl mx-auto p-4 mb-8">
-            <section>
-                <div class="text-center space-y-4">
-                    <h3 class="text-xl font-semibold mb-4">Our Mission</h3>
-                    <p class="text-gray-800">
-                        Our mission is to empower and relieve families in Tyneside and the surrounding areas living in
-                        poverty. We do this by supplying essential items, ensuring that every child's basic needs are
-                        met from birth. From necessities like nappies and baby formula to safety items such as stair
-                        gates, strollers, clothing, and toys, our Community Interest Company (C.I.C.) is committed to
-                        providing comprehensive support for families caring for children.
-                    </p>
-                    <p class="text-gray-800">
-                        In collaboration with the
-                        local community, we facilitate the donation of pre-loved essentials from one family to another,
-                        promoting recycling. Our dedication extends to ensuring school children have free uniforms and
-                        proper footwear, contributing to minimising landfill waste and advocating sustainable living
-                        practices.
-                    </p>
-                </div>
-            </section>
-        </div>
-
         <!-- About Us Section. Text on left, placeholder image on right. Inside container -->
         <div class="container max-w-4xl mx-auto p-4 mb-8">
             <section>
-                <div class="text-center space-y-4">
-                    <h3 class="text-xl font-semibold mb-4">About Us</h3>
+                <div class="space-y-4">
+                    <h3 class="text-3xl font-semibold mb-4">About Us</h3>
                     <p class="text-gray-800">
                         Established in December 2023 by Co-Founders who shared a commitment to supporting families in
                         and around Tyneside, Tyneside Community Store C.I.C. has rapidly expanded with the help of
@@ -79,11 +56,34 @@ import AppLayout from '@/Layouts/AppLayout.vue';
             </section>
         </div>
 
+        <!-- Our mission -->
+        <div class="container max-w-4xl mx-auto p-4 mb-8">
+            <section>
+                <div class="space-y-4">
+                    <h3 class="text-3xl font-semibold mb-4">Our Mission</h3>
+                    <p class="text-gray-800">
+                        Our mission is to empower and relieve families in Tyneside and the surrounding areas living in
+                        poverty. We do this by supplying essential items, ensuring that every child's basic needs are
+                        met from birth. From necessities like nappies and baby formula to safety items such as stair
+                        gates, strollers, clothing, and toys, our Community Interest Company (C.I.C.) is committed to
+                        providing comprehensive support for families caring for children.
+                    </p>
+                    <p class="text-gray-800">
+                        In collaboration with the
+                        local community, we facilitate the donation of pre-loved essentials from one family to another,
+                        promoting recycling. Our dedication extends to ensuring school children have free uniforms and
+                        proper footwear, contributing to minimising landfill waste and advocating sustainable living
+                        practices.
+                    </p>
+                </div>
+            </section>
+        </div>
+
         <!-- Objectives of the Company -->
         <div class="container max-w-4xl mx-auto p-4 mb-8">
             <section>
-                <div class="text-center">
-                    <h3 class="text-xl font-semibold mb-4">Objectives</h3>
+                <div class="space-y-4">
+                    <h3 class="text-3xl font-semibold mb-4">Objectives</h3>
                     <ul class="list-disc text-left list-inside text-gray-700 space-y-2">
                         <li>Distributing free baby food, nappies, toiletries, toys, and other equipment to those in need
                             via referral partners.</li>
@@ -105,8 +105,8 @@ import AppLayout from '@/Layouts/AppLayout.vue';
         <!-- Activities of the Company -->
         <div class="container max-w-4xl mx-auto p-4 mb-8">
             <section>
-                <div class="text-center">
-                    <h3 class="text-xl font-semibold mb-4">Activities</h3>
+                <div class="space-y-4">
+                    <h3 class="text-3xl font-semibold mb-4">Activities</h3>
                     <p class="text-gray-700">
                         To provide access to free items via the baby bank, such as but not limited to; Baby food,
                         nappies, toiletries, and equipment. Additionally, offering free school and other clothing,
@@ -120,8 +120,8 @@ import AppLayout from '@/Layouts/AppLayout.vue';
         <!-- How will it benefit the community? -->
         <div class="container max-w-4xl mx-auto p-4 mb-8">
             <section>
-                <div class="text-center">
-                    <h3 class="text-xl font-semibold mb-4">How will it benefit the community?</h3>
+                <div class="">
+                    <h3 class="text-3xl font-semibold mb-4">How will it benefit the community?</h3>
                     <p class="text-gray-700">
                         The community will benefit by having access to basic and vital goods, providing instant
                         relief of severe deprivation on a local level. We aim to fulfill the demand for products not

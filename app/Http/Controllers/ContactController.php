@@ -10,6 +10,8 @@ use Log;
 class ContactController extends Controller
 {
     //
+    private $bccRecipients = ['melanie@tynesidecommunitystore.co.uk', 'shakira@tynesidecommunitystore.co.uk'];
+
     public function contactFormSubmitted(Request $request)
     {
         Log::debug("Entered contact conteroller");
@@ -31,7 +33,7 @@ class ContactController extends Controller
         // send contact form mail
         // to $email
         try {
-            Mail::to($request->email)->send(new ContactFormMail($data));
+            Mail::to($request->email)->bcc($this->bccRecipients)->send(new ContactFormMail($data));
         } catch (\Exception $e) {
             Log::debug("Error sending email");
             Log::debug($e);
