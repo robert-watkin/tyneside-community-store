@@ -33,7 +33,7 @@ import { Link } from '@inertiajs/vue3';
             </section>
         </div>
 
-        <!-- About Us Section. Text on left, placeholder image on right. Inside container -->
+        <!-- About Us Section. Text on left, placeholder image on right. Inside container
         <div class="container mx-auto pt-12">
             <section class="mb-8">
                 <div class="flex flex-col md:flex-row justify-between ">
@@ -46,7 +46,6 @@ import { Link } from '@inertiajs/vue3';
                             Directors,
                             volunteers, and a supportive community.
                         </p>
-                        <!-- Read more button navigate to about -->
                         <div class="mt-4">
                             <Link :href="route('about')" class="bg-blue-500 text-white px-4 py-2 rounded-md">Read
                             More</Link>
@@ -59,8 +58,23 @@ import { Link } from '@inertiajs/vue3';
                 </div>
 
             </section>
-        </div>
+        </div> -->
 
+
+        <div class="container mx-auto max-w-3xl p-4 mb-8 text-center">
+            <h3 class="text-xl font-semibold mb-4">About Us</h3>
+            <p class="text-gray-700">
+                Established in December 2023 by Co-Founders who shared a commitment to supporting families
+                in and around
+                Tyneside, Tyneside Community Store C.I.C. has rapidly expanded with the help of dedicated
+                Directors,
+                volunteers, and a supportive community.
+            </p>
+            <div class="mt-4">
+                <Link :href="route('about')" class="bg-blue-500 text-white px-4 py-2 rounded-md">Read
+                More</Link>
+            </div>
+        </div>
         <!-- Find Us Section. Google Maps on left, address on right. Inside container -->
         <div class="container mx-auto p-4 mb-8">
             <!-- Find Us -->
