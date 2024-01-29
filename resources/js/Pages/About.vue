@@ -27,7 +27,7 @@ import AppLayout from '@/Layouts/AppLayout.vue';
                         local community and offer placement opportunities for colleges, universities, and businesses.
                     </p>
                     <p class="text-gray-800">
-                        Our operating hours are Monday to Saturday from 9.30 am to 14.30 pm. The most effective way to
+                        Our operating hours are Monday to Saturday from 9.30 am to 2.30 pm. The most effective way to
                         contact us is via email or Facebook. Please understand that we operate part-time, and our social
                         media channels are managed by volunteers juggling this responsibility with work and family
                         commitments, so your patience is appreciated.
