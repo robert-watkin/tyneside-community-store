@@ -82,6 +82,7 @@ import { Link } from '@inertiajs/vue3';
                     <div class="">
                         <h3 class="text-xl font-semibold mb-4">Find Us</h3>
                         <!-- 73-75 High Street West NE28 8JD -->
+                        <p>Our operating hours are Monday to Saturday from 9:30 am to 2:30 pm</p>
                         <p class="text-gray-700">
                             73-75 High Street West<br />
                             Wallsend<br />
