@@ -28,37 +28,18 @@ import { Link } from '@inertiajs/vue3';
                             for
                             the community.
                         </p>
+                        <p class="pt-4 text-gray-700">
+                            We also harbour the regions biggest baby bank accessible by referral only. Please email us to
+                            benefit from this service
+                        </p>
+                        <div class="mt-4">
+                            <Link :href="route('contact')" class="bg-blue-500 text-white px-4 py-2 rounded-md">Contact Us
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </section>
         </div>
-
-        <!-- About Us Section. Text on left, placeholder image on right. Inside container
-        <div class="container mx-auto pt-12">
-            <section class="mb-8">
-                <div class="flex flex-col md:flex-row justify-between ">
-                    <div class="md:pl-16 p-4 md:w-1/2 md:text-right">
-                        <h3 class="text-xl font-semibold mb-4">About Us</h3>
-                        <p class="text-gray-700">
-                            Established in December 2023 by Co-Founders who shared a commitment to supporting families
-                            in and around
-                            Tyneside, Tyneside Community Store C.I.C. has rapidly expanded with the help of dedicated
-                            Directors,
-                            volunteers, and a supportive community.
-                        </p>
-                        <div class="mt-4">
-                            <Link :href="route('about')" class="bg-blue-500 text-white px-4 py-2 rounded-md">Read
-                            More</Link>
-                        </div>
-                    </div>
-                    <div class="p-4 md:w-1/2">
-                        <img class="h-48 w-full object-cover object-top md:h-auto md:mx-0 md:w-2/3"
-                            src="images/store-front.jpg" alt="Store Front Image" />
-                    </div>
-                </div>
-
-            </section>
-        </div> -->
 
         <div class="container mx-auto max-w-3xl p-4 mb-8 text-center">
             <h3 class="text-xl font-semibold mb-4">About Us</h3>
@@ -81,13 +62,22 @@ import { Link } from '@inertiajs/vue3';
                 <div class="text-center">
                     <div class="">
                         <h3 class="text-xl font-semibold mb-4">Find Us</h3>
-                        <!-- 73-75 High Street West NE28 8JD -->
-                        <p>Our operating hours are Monday to Saturday from 9:30 am to 2:30 pm</p>
+
+                        <div class="flex flex-row justify-center">
+
+                            <p class="text-gray-700">Our address:</p>
+                        </div>
                         <p class="text-gray-700">
                             73-75 High Street West<br />
                             Wallsend<br />
                             NE28 8JD
                         </p>
+
+                        <p class="mt-4 text-gray-700">Opening hours:</p>
+                        <ul class="text-gray-700">
+                            <p>Monday to Friday - 9:30am to 2:30pm</p>
+                            <p>Saturday - 9:30am to 11:30am</p>
+                        </ul>
                     </div>
                     <!-- Google Maps Embed -->
                     <div class="p-4 mx-auto h-96 md:w-2/3">

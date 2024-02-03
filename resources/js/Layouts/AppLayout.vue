@@ -61,7 +61,7 @@ const logout = () => {
                                     </NavLink>
                                 </div>
                             </div>
-<!-- 
+                            <!-- 
                             <div class="hidden sm:flex sm:items-center sm:ms-6" v-if="$page.props.auth.user">
                                 Settings Dropdown
                                 <div class="ms-3 relative">
@@ -152,7 +152,7 @@ const logout = () => {
                             </ResponsiveNavLink>
                         </div>
 
-                        
+
                         <!-- Responsive Settings Options
                         <div v-if="$page.props.auth.user" class="pt-4 pb-1 border-t border-gray-200">
                             <div class="flex items-center px-4">
@@ -211,13 +211,17 @@ const logout = () => {
             <footer class="bg-white border-t border-gray-100 mt-auto">
                 <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
                     <nav class="flex flex-col justify-between space-y-4 md:space-y-0 text-sm">
-                        <div class="flex flex-col">
-                            <NavLink :href="route('welcome')" class="text-sm" :active="route().current('welcome')">
+                        <div>
+                            <NavLink :href="route('welcome')" :active="route().current('welcome')">
                                 Home
                             </NavLink>
+                        </div>
+                        <div>
                             <NavLink :href="route('about')" :active="route().current('about')">
                                 About Us
                             </NavLink>
+                        </div>
+                        <div>
                             <NavLink :href="route('contact')" :active="route().current('contact')">
                                 Contact Us
                             </NavLink>
@@ -225,7 +229,8 @@ const logout = () => {
                         <div>
                             <p class="text-gray-500 mx-auto text-center">&copy; {{ new Date().getFullYear() }}
                                 Tyneside Community Store. All rights
-                                reserved.</p>
+                                reserved. Site By <a class="hover:text-blue-600" href="https://www.linkedin.com/in/robert-watkin-8bb61515a/">Robert
+                                    W</a></p>
                         </div>
                     </nav>
                 </div>
