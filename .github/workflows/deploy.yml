@@ -39,16 +39,14 @@ jobs:
         run: ssh-keyscan -H ${{ secrets.LIVE_SERVER_HOST }} >> ~/.ssh/known_hosts  # Replace with your actual server details
       
       - name: Deploy With rsync
-        run: rsync -rltvz --delete --omit-dir-times --exclude='.env' --exclude='storage/logs/*' ./ ${{ secrets.LIVE_SERVER_USERNAME }}@${{ secrets.LIVE_SERVER_HOST }}:/var/www/temporary
+        run: rsync -rltvz --delete --omit-dir-times --exclude='.env' --exclude='storage/logs/*' ./ ${{ secrets.LIVE_SERVER_USERNAME }}@${{ secrets.LIVE_SERVER_HOST }}:/var/www/tynesidecommunitystore
 
       - name: SSH into server and run commands
         run: |
             ssh -o StrictHostKeyChecking=no ${{ secrets.LIVE_SERVER_USERNAME }}@${{ secrets.LIVE_SERVER_HOST }} << 'ENDSSH'
-              cd /var/www/temporary
-              # composer update
-              # chmod -R 775 storage
-              # chmod -R 775 bootstrap/cache
-              # chown -R www-data:www-data /var/www/temporary
-              # cp ../task-trackr-130c3-firebase-adminsdk-c5bfo-7e4258c956.json .
+              cd /var/www/tynesidecommunitystore
+              chmod -R 775 storage
+              chmod -R 775 bootstrap/cache
+              chown -R www-data:www-data /var/www/tynesidecommunitystore
             ENDSSH
 
