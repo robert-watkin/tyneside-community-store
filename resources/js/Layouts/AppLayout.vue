@@ -32,17 +32,6 @@ const logout = () => {
 
         <Head :title="title" />
 
-        <!-- Google tag (gtag.js) -->
-        <component :is="'script'" async src="https://www.googletagmanager.com/gtag/js?id=G-986Y58W8W6"></component>
-
-        <component :is="'script'">
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-986Y58W8W6');
-        </component>
-
         <Banner />
 
         <div class="flex flex-col justify-between min-h-screen bg-gray-100">
