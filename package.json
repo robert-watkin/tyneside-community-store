@@ -19,6 +19,7 @@
         "vue": "^3.2.31"
     },
     "dependencies": {
-        "vue-gtag": "^2.0.1"
+        "vue-gtag": "^2.0.1",
+        "ziggy-js": "^2.5.3"
     }
 }
