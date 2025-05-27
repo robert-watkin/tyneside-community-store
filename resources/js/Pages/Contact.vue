@@ -1,52 +1,66 @@
-<!-- Home page of website -->
+<!-- Contact page of website -->
 <template>
     <AppLayout title="Contact Us">
-        <div class="max-w-md mx-auto mt-24 rounded-md overflow-hidden p-6">
-            <h2 class="text-2xl font-semibold mb-4">Contact Us</h2>
-
-            <form @submit.prevent="submitForm">
-                <div class="mb-4">
-                    <label for="name" class="block text-gray-600 text-sm font-medium">Name</label>
-                    <input v-model="form.name" type="text" id="name" name="name" class="mt-1 p-2 w-full border rounded-md"
-                        required>
+        <div class="max-w-md mx-auto mt-24 rounded-md overflow-hidden p-6 text-center">
+            <h2 class="text-2xl font-semibold mb-8">Contact Us</h2>
+            
+            <!-- Contact details section -->
+            <div class="space-y-6">
+                <!-- Email contact -->
+                <div class="flex items-center justify-center space-x-3 p-4 bg-gray-50 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6 text-blue-600">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z" />
+                    </svg>
+                    <a href="mailto:support@tynesidecommunitystore.co.uk" class="text-gray-700 hover:text-blue-600 transition-colors">
+                        support@tynesidecommunitystore.co.uk
+                    </a>
                 </div>
-
-                <div class="mb-4">
-                    <label for="email" class="block text-gray-600 text-sm font-medium">Email</label>
-                    <input v-model="form.email" type="email" id="email" name="email"
-                        class="mt-1 p-2 w-full border rounded-md" required>
+                
+                <!-- Phone contact -->
+                <div class="flex items-center justify-center space-x-3 p-4 bg-gray-50 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" 
+                        stroke="currentColor" class="w-6 h-6 text-blue-600">
+                        <path stroke-linecap="round" stroke-linejoin="round" 
+                            d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                    </svg>
+                    <a href="tel:01912224444" class="text-gray-700 hover:text-blue-600 transition-colors">
+                        0191 222 4444
+                    </a>
                 </div>
-
-                <div class="mb-4">
-                    <label for="message" class="block text-gray-600 text-sm font-medium">Message</label>
-                    <textarea v-model="form.message" id="message" name="message" rows="4"
-                        class="mt-1 p-2 w-full border rounded-md" required></textarea>
+                
+                <!-- Address -->
+                <div class="flex items-center justify-center space-x-3 p-4 bg-gray-50 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" 
+                        stroke="currentColor" class="w-6 h-6 text-blue-600">
+                        <path stroke-linecap="round" stroke-linejoin="round" 
+                            d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" 
+                            d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                    </svg>
+                    <div class="text-gray-700">
+                        <p>Tyneside Community Store</p>
+                        <p>123 High Street</p>
+                        <p>Newcastle upon Tyne</p>
+                        <p>NE1 1AA</p>
+                    </div>
                 </div>
-
-                <div class="mt-4">
-                    <button class="bg-blue-500 text-white px-4 py-2 rounded-md">Submit</button>
+                
+                <!-- Opening hours -->
+                <div class="flex items-center justify-center space-x-3 p-4 bg-gray-50 rounded-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" 
+                        stroke="currentColor" class="w-6 h-6 text-blue-600">
+                        <path stroke-linecap="round" stroke-linejoin="round" 
+                            d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <div class="text-gray-700">
+                        <p class="font-medium">Opening Hours:</p>
+                        <p>Monday - Friday: 9am - 5pm</p>
+                        <p>Saturday: 10am - 4pm</p>
+                        <p>Sunday: Closed</p>
+                    </div>
                 </div>
-
-                <div v-if="successMessage" class="mt-4 text-green-600">
-                    {{ successMessage }}
-                </div>
-
-                <div v-if="errorMessage" class="mt-4 text-red-600">
-                    {{ errorMessage }}
-                </div>
-            </form>
-        </div>
-
-        <!-- Section containing contact details e.g email address -->
-        <div class="container mx-auto p-4 mb-8 items-center">
-            <h3 class="text-xl font-semibold mb-4 text-center">Or Contact Us Directly...</h3>
-            <div class="flex justify-center items-center space-x-2 mb-4">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M2.25 13.5h3.86a2.25 2.25 0 0 1 2.012 1.244l.256.512a2.25 2.25 0 0 0 2.013 1.244h3.218a2.25 2.25 0 0 0 2.013-1.244l.256-.512a2.25 2.25 0 0 1 2.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 0 0 2.25 2.25h15A2.25 2.25 0 0 0 21.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 0 0-2.15-1.588H6.911a2.25 2.25 0 0 0-2.15 1.588L2.35 13.177a2.25 2.25 0 0 0-.1.661Z" />
-                </svg>
-                <p class="text-gray-700">support@tynesidecommunitystore.co.uk</p>
             </div>
         </div>
     </AppLayout>
@@ -54,47 +68,6 @@
 
 <script setup>
 import AppLayout from '@/Layouts/AppLayout.vue';
-import { ref } from 'vue';
-import { Axios } from 'axios';
-import axios from 'axios';
-
-const form = ref({
-    name: '',
-    email: '',
-    message: '',
-});
-
-const successMessage = ref('');
-const errorMessage = ref('');
-
-const submitForm = async () => {
-    console.log("form submitted");
-
-    // submit form using axios
-    axios.post('/api/contact', form.value)
-        .then(function (response) {
-            // handle success
-            console.log(response);
-            successMessage.value = 'Form submitted successfully!';
-            errorMessage.value = '';
-            clearForm();
-        })
-        .catch(function (error) {
-            // handle error
-            console.log(error);
-            successMessage.value = '';
-            errorMessage.value = 'Failed to submit form. Please try again.';
-        })
-        .then(function () {
-            // always executed
-        });
-};
-
-const clearForm = () => {
-    form.value.name = '';
-    form.value.email = '';
-    form.value.message = '';
-};
 </script>
 
 <!-- Some example content a customer might ask -->
