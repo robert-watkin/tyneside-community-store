@@ -66,7 +66,7 @@ import { Link } from '@inertiajs/vue3';
                                     </div>
                                     <div class="max-w-full overflow-hidden">
                                         <h4 class="text-lg font-medium text-gray-900">Email</h4>
-                                        <a href="mailto:support@tynesidecommunitystore.co.uk" class="text-gray-600 hover:text-brand transition-colors break-words text-xs">
+                                        <a href="mailto:support@tynesidecommunitystore.co.uk" class="text-gray-600 hover:text-brand transition-colors break-words">
                                             support@tynesidecommunitystore.co.uk
                                         </a>
                                     </div>
