@@ -28,38 +28,37 @@ const logout = () => {
 </script>
 
 <template>
-    <div>
+    <div class="overflow-x-hidden">
 
         <Head :title="title" />
 
         <Banner />
 
-        <div class="flex flex-col justify-between min-h-screen bg-gray-100">
+        <div class="flex flex-col justify-between min-h-screen bg-gray-50">
             <div>
-                <nav class="bg-white border-b border-gray-100">
+                <nav class="bg-brand text-white border-b border-brand-dark">
                     <!-- Primary Navigation Menu -->
                     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                         <div class="flex justify-between h-20">
-                            <div class="flex">
-                                <!-- Logo -->
-                                <div class="shrink-0 flex items-center">
-                                    <Link :href="route('welcome')">
-                                    <ApplicationMark class="block h-16 w-auto" />
-                                    </Link>
-                                </div>
+                            <!-- Logo and Title (Left) -->
+                            <div class="shrink-0 flex items-end">
+                                <Link :href="route('welcome')" class="flex items-end h-16 self-end">
+                                    <ApplicationMark class="block" />
+                                    <p class="text-xl ml-4 font-bold text-white hidden md:block self-center">Tyneside Community Store</p>
+                                </Link>
+                            </div>
 
-                                <!-- Navigation Links -->
-                                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
-                                    <NavLink :href="route('welcome')" :active="route().current('welcome')">
-                                        Home
-                                    </NavLink>
-                                    <NavLink :href="route('about')" :active="route().current('about')">
-                                        About Us
-                                    </NavLink>
-                                    <NavLink :href="route('contact')" :active="route().current('contact')">
-                                        Contact Us
-                                    </NavLink>
-                                </div>
+                            <!-- Navigation Links (Right) -->
+                            <div class="hidden sm:flex items-end justify-end space-x-8 h-full"> 
+                                <NavLink :href="route('welcome')" :active="route().current('welcome')">
+                                    Home
+                                </NavLink>
+                                <NavLink :href="route('about')" :active="route().current('about')">
+                                    About Us
+                                </NavLink>
+                                <NavLink :href="route('contact')" :active="route().current('contact')">
+                                    Contact Us
+                                </NavLink>
                             </div>
                             <!-- 
                             <div class="hidden sm:flex sm:items-center sm:ms-6" v-if="$page.props.auth.user">
@@ -208,7 +207,7 @@ const logout = () => {
             </div>
 
             <!-- Page Footer -->
-            <footer class="bg-white border-t border-gray-100 mt-auto">
+            <footer class="bg-brand text-white border-t border-brand-dark mt-auto">
                 <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
                     <nav class="flex flex-col justify-between space-y-4 md:space-y-0 text-sm">
                         <div>

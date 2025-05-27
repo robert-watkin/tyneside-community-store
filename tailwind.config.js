@@ -17,8 +17,16 @@ export default {
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
             },
+            colors: {
+                'brand': {
+                    DEFAULT: '#0c2d9c',
+                    'light': '#3e59c7',
+                    'dark': '#091f6d',
+                },
+            },
             backgroundImage: {
-                'welcome-hero': "url('/images/welcome-hero.jpg')",
+                'welcome-hero': "url('/images/store-front-new.jpg')",
+                'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
             }
         },
     },
