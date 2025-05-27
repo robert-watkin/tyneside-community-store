@@ -147,7 +147,73 @@ import { Link } from '@inertiajs/vue3';
             </div>
         </div>
         
-
+        <!-- Connect With Us section -->
+        <div class="py-20 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+            <!-- Decorative elements -->
+            <div class="absolute left-0 bottom-10 w-32 h-32 bg-brand/5 rounded-full -ml-16"></div>
+            <div class="absolute right-0 top-20 w-40 h-40 bg-brand/5 rounded-full -mr-20"></div>
+            
+            <div class="container mx-auto px-4 relative">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-4">Connect With Us</h2>
+                    <div class="w-24 h-1 bg-brand mx-auto mb-6"></div>
+                    <p class="text-gray-600 max-w-2xl mx-auto">Follow us on Facebook to stay updated with our latest news, events, and donation needs.</p>
+                </div>
+                
+                <div class="flex justify-center">
+                    <div class="w-full max-w-3xl bg-white rounded-xl shadow-xl overflow-hidden transform transition-all hover:shadow-2xl duration-300">
+                        <div class="md:flex md:h-[500px] h-[900px]">
+                            <!-- Facebook Link -->
+                            <div class="md:w-1/3 bg-gradient-to-br from-brand to-brand-dark text-white flex flex-col justify-center relative overflow-hidden">
+                                <!-- Background pattern -->
+                                <div class="absolute inset-0 opacity-10">
+                                    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                                        <defs>
+                                            <pattern id="smallGrid" width="10" height="10" patternUnits="userSpaceOnUse">
+                                                <path d="M 10 0 L 0 0 0 10" fill="none" stroke="white" stroke-width="0.5"/>
+                                            </pattern>
+                                        </defs>
+                                        <rect width="100%" height="100%" fill="url(#smallGrid)" />
+                                    </svg>
+                                </div>
+                                
+                                <div class="relative text-center px-8 py-12">
+                                    <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-white/10 flex items-center justify-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                                        </svg>
+                                    </div>
+                                    
+                                    <h3 class="text-2xl font-bold mb-4">Follow Our Page</h3>
+                                    
+                                    <p class="mb-8 opacity-90">Get the latest updates, events, and ways to support our community.</p>
+                                    
+                                    <a href="https://www.facebook.com/northeastcommunitystores/" target="_blank" rel="noopener noreferrer" class="inline-block px-6 py-3 bg-white text-brand font-semibold rounded-md shadow-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105">
+                                        Visit Facebook Page
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <!-- Facebook Feed Embed -->
+                            <div class="md:w-2/3 h-full flex items-center justify-center">
+                                <div class="w-full h-full">
+                                    <iframe 
+                                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fnortheastcommunitystores%2F&tabs=timeline&width=500&height=500&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=false&appId" 
+                                        width="100%" 
+                                        height="100%" 
+                                        style="border:none;overflow:hidden;display:block" 
+                                        scrolling="no" 
+                                        frameborder="0" 
+                                        allowfullscreen="true" 
+                                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </AppLayout>
 </template>
 
