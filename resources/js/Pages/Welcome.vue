@@ -66,14 +66,6 @@ import { Link } from '@inertiajs/vue3';
                                 benefit from this service.
                             </p>
                             
-                            <!-- Small decorative illustration -->
-                            <div class="mt-8 opacity-75">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="120" height="30" viewBox="0 0 120 30" fill="none" class="text-brand/20">
-                                    <path d="M15 5C8.92487 5 4 9.92487 4 16C4 22.0751 8.92487 27 15 27C21.0751 27 26 22.0751 26 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                    <path d="M60 5C53.9249 5 49 9.92487 49 16C49 22.0751 53.9249 27 60 27C66.0751 27 71 22.0751 71 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                    <path d="M105 5C98.9249 5 94 9.92487 94 16C94 22.0751 98.9249 27 105 27C111.075 27 116 22.0751 116 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                                </svg>
-                            </div>
                         </div>
                         <div class="md:w-1/2 bg-gradient-to-br from-brand to-brand-dark p-8 md:p-12 text-white flex flex-col justify-center relative overflow-hidden">
                             <!-- Background pattern -->
@@ -242,10 +234,10 @@ import { Link } from '@inertiajs/vue3';
                         <div class="md:flex">
                             <!-- Map -->
                             <div class="md:w-2/3">
-                                <div class="h-full min-h-[400px] w-full">
+                                <div class="h-full min-h-[650px] md:min-h-[400px] w-full">
                                     <iframe
                                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1072.4935107000597!2d-1.5372945072447541!3d54.9905926615189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487e7035d1d0f16b%3A0x34286027e3ba564e!2s73-75%20High%20St%20W%2C%20Wallsend%20NE28%208JD!5e0!3m2!1sen!2suk!4v1703969818369!5m2!1sen!2suk"
-                                        class="w-full h-full border-0" allowfullscreen="" loading="lazy"
+                                        class="w-full h-[650px] md:h-full border-0" allowfullscreen="true" loading="lazy"
                                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                                 </div>
                             </div>

@@ -64,9 +64,9 @@ import { Link } from '@inertiajs/vue3';
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                         </svg>
                                     </div>
-                                    <div>
+                                    <div class="max-w-full overflow-hidden">
                                         <h4 class="text-lg font-medium text-gray-900">Email</h4>
-                                        <a href="mailto:support@tynesidecommunitystore.co.uk" class="text-gray-600 hover:text-brand transition-colors">
+                                        <a href="mailto:support@tynesidecommunitystore.co.uk" class="text-gray-600 hover:text-brand transition-colors break-words text-xs">
                                             support@tynesidecommunitystore.co.uk
                                         </a>
                                     </div>
@@ -135,10 +135,10 @@ import { Link } from '@inertiajs/vue3';
                             </div>
                             
                             <!-- Small map or image -->
-                            <div class="rounded-lg overflow-hidden h-48 bg-gray-200">
+                            <div class="rounded-lg overflow-hidden h-60 sm:h-48 bg-gray-200">
                                 <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2289.8286938669687!2d-1.6179612230321212!3d54.98969847763006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487e70c8d5c9b8a1%3A0xd8bea7b8a0d7a15a!2sNewcastle%20upon%20Tyne!5e0!3m2!1sen!2suk!4v1684933512266!5m2!1sen!2suk"
-                                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1072.4935107000597!2d-1.5372945072447541!3d54.9905926615189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487e7035d1d0f16b%3A0x34286027e3ba564e!2s73-75%20High%20St%20W%2C%20Wallsend%20NE28%208JD!5e0!3m2!1sen!2suk!4v1703969818369!5m2!1sen!2suk"
+                                    width="100%" height="100%" class="border-0" allowfullscreen="true" loading="lazy"
                                     referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
@@ -149,9 +149,7 @@ import { Link } from '@inertiajs/vue3';
         
         <!-- Connect With Us section -->
         <div class="py-20 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
-            <!-- Decorative elements -->
-            <div class="absolute left-0 bottom-10 w-32 h-32 bg-brand/5 rounded-full -ml-16"></div>
-            <div class="absolute right-0 top-20 w-40 h-40 bg-brand/5 rounded-full -mr-20"></div>
+            <!-- No decorative elements -->
             
             <div class="container mx-auto px-4 relative">
                 <div class="text-center mb-12">
