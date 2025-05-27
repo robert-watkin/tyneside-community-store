@@ -83,7 +83,7 @@ import { Link } from '@inertiajs/vue3';
                                 </h3>
                                 <div class="space-y-4">
                                     <div class="flex items-center">
-                                        <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mr-4">
+                                        <div class="w-12 h-12 min-w-[3rem] min-h-[3rem] rounded-full bg-white/10 flex items-center justify-center mr-4">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                                             </svg>
@@ -92,18 +92,9 @@ import { Link } from '@inertiajs/vue3';
                                             <p class="font-medium">Thousands of families supported</p>
                                         </div>
                                     </div>
+
                                     <div class="flex items-center">
-                                        <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mr-4">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                                            </svg>
-                                        </div>
-                                        <div>
-                                            <p class="font-medium">Safe places to sleep for children</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex items-center">
-                                        <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mr-4">
+                                        <div class="w-12 h-12 min-w-[3rem] min-h-[3rem] rounded-full bg-white/10 flex items-center justify-center mr-4">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18zm-3-9v-2a2 2 0 00-2-2H8a2 2 0 00-2 2v2h12z" />
                                             </svg>
@@ -151,7 +142,7 @@ import { Link } from '@inertiajs/vue3';
                             <!-- Mission statement overlay -->
                             <div class="absolute inset-0 flex items-center justify-center p-8">
                                 <div class="text-white text-center">
-                                    <div class="w-16 h-16 mx-auto mb-4 rounded-full bg-white/10 flex items-center justify-center">
+                                    <div class="w-16 h-16 min-w-[4rem] min-h-[4rem] mx-auto mb-4 rounded-full bg-white/10 flex items-center justify-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                                         </svg>
@@ -270,7 +261,7 @@ import { Link } from '@inertiajs/vue3';
                         <div class="flex flex-col md:flex-row gap-8 items-center">
                             <div class="md:w-1/3 flex-shrink-0">
                                 <div class="bg-gradient-to-br from-brand to-brand-dark rounded-lg p-8 text-white text-center">
-                                    <div class="w-20 h-20 mx-auto mb-4 rounded-full bg-white/10 flex items-center justify-center">
+                                    <div class="w-20 h-20 min-w-[5rem] min-h-[5rem] mx-auto mb-4 rounded-full bg-white/10 flex items-center justify-center">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
                                         </svg>
