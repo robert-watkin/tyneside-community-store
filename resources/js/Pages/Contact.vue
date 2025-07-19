@@ -81,8 +81,8 @@ import { Link } from '@inertiajs/vue3';
                                     </div>
                                     <div>
                                         <h4 class="text-lg font-medium text-gray-900">Phone</h4>
-                                        <a href="tel:01912224444" class="text-gray-600 hover:text-brand transition-colors">
-                                            0191 222 4444
+                                        <a href="tel:07434237703" class="text-gray-600 hover:text-brand transition-colors">
+                                            07434237703
                                         </a>
                                     </div>
                                 </div>
@@ -98,10 +98,9 @@ import { Link } from '@inertiajs/vue3';
                                     <div>
                                         <h4 class="text-lg font-medium text-gray-900">Address</h4>
                                         <div class="text-gray-600">
-                                            <p>Tyneside Community Store</p>
-                                            <p>123 High Street</p>
+                                            <p>73-75 High Street West</p>
                                             <p>Newcastle upon Tyne</p>
-                                            <p>NE1 1AA</p>
+                                            <p>NE28 8JD</p>
                                         </div>
                                     </div>
                                 </div>
